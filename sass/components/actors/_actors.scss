@@ -1,0 +1,49 @@
+.actors {
+    padding-bottom: 97px;
+}
+
+.actors__list {
+    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+
+    @media screen and (max-width:1200px) {
+        gap: 30px;
+    }
+
+    @media screen and (max-width:768px) {
+        gap: 20px;
+    }
+}
+
+.actors__item {
+    width: calc((100% - 300px) / 6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    @media screen and (max-width:1200px) {
+        width: calc((100% - 60px) / 3);
+    }
+
+    @media screen and (max-width:768px) {
+        width: calc((100% - 20px) / 2);
+    }
+}
+
+.actors__image {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.actors__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.11;
+
+    @media screen and (max-width:768px) {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,14 @@
+// global styles
+@import './reset/reset';
+@import './variables/variables';
+@import './utils/utils';
+
+// components
+@import './components/header/header';
+@import './components/hero/hero';
+@import './components/trend/trend';
+@import './components/genres/genres';
+@import './components/actors/actors';
+@import './components/soon/soon';
+@import './components/register/register';
+@import './components/footer/footer';

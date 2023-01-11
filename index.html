@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@400;600;700;800&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="./index.html" class="header__logo">
+                <img src="./img/header/header-logo.svg" alt="logo" width="70">
+                box
+            </a>
+            <nav class="header__navigation navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Home</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">TV Shows</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Movies</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Series</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="header__info info">
+                <li class="info__item">
+                    <a href="#" class="info__button">
+                        <svg width="18" height="18" class="info__icon">
+                            <use href="./img/sprite.svg#search-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="info__item">
+                    <a href="#" class="info__button">
+                        <svg width="20" height="20" class="info__icon">
+                            <use href="./img/sprite.svg#call-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="info__item">
+                    <a href="#" class="info__button">
+                        <svg width="18" height="20" class="info__icon">
+                            <use href="./img/sprite.svg#human-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <button class="header__burger js-burger-open" name="burger">
+                <svg width="50" height="50" class="header__burger--icon">
+                    <use href="./img/sprite.svg#burger-icon"></use>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Zack Snyder's <br> Justice League</h1>
+                    <ul class="hero__list">
+                        <li class="hero__item">
+                            <span class="hero__year">2021</span>
+                        </li>
+                        <li class="hero__item hero__item--age">
+                            <span class="hero__age">18+</span>
+                        </li>
+                        <li class="hero__item">
+                            <span class="hero__time">4h 2min</span>
+                        </li>
+                        <li class="hero__item">
+                            <span class="hero__rate">8.8</span>
+                            <svg width="16" height="15" class="hero__star">
+                                <use href="./img/sprite.svg#star-icon"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                    <p class="hero__text">Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce
+                        Wayne
+                        aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world
+                        from
+                        an approaching threat of catastrophic proportions.</p>
+                    <div class="hero__buttons">
+                        <button class="hero__button--white main__button" name="watch">
+                            <svg width="14" height="18">
+                                <use href="./img/sprite.svg#play-icon"></use>
+                            </svg>
+                            <span>Watch</span>
+                        </button>
+                        <button class="hero__button--black" name="information">More information</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trend">
+            <div class="container">
+                <h2 class="main__title trend__title">Trending TV Shows</h2>
+                <ul class="trend__list">
+                    <li class="trend__item">
+                        <a href="#" class="trend__link">
+                            <picture>
+                                <source srcset="
+                                ./img/shows/image-1.webp,
+                                ./img/shows/image-1@2x.webp 2x,
+                                " type="image/webp">
+                                <source srcset="
+                                ./img/shows/image-1.jpg,
+                                ./img/shows/image-1@2x.jpg 2x,
+                                " type="image/jpg">
+                                <img src="./img/shows/image-1.jpg" alt="trend-show" class="trend__image" width="200">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="trend__item">
+                        <a href="#" class="trend__link">
+                            <picture>
+                                <source srcset="
+                                ./img/shows/image-2.webp,
+                                ./img/shows/image-2@2x.webp 2x,
+                                " type="image/webp">
+                                <source srcset="
+                                ./img/shows/image-2.jpg,
+                                ./img/shows/image-2@2x.jpg 2x,
+                                " type="image/jpg">
+                                <img src="./img/shows/image-2.jpg" alt="trend-show" class="trend__image" width="200">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="trend__item">
+                        <a href="#" class="trend__link">
+                            <picture>
+                                <source srcset="
+                                ./img/shows/image-3.webp,
+                                ./img/shows/image-3@2x.webp 2x,
+                                " type="image/webp">
+                                <source srcset="
+                                ./img/shows/image-3.jpg,
+                                ./img/shows/image-3@2x.jpg 2x,
+                                " type="image/jpg">
+                                <img src="./img/shows/image-3.jpg" alt="trend-show" class="trend__image" width="200">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="trend__item">
+                        <a href="#" class="trend__link">
+                            <picture>
+                                <source srcset="
+                                ./img/shows/image-4.webp,
+                                ./img/shows/image-4@2x.webp 2x,
+                                " type="image/webp">
+                                <source srcset="
+                                ./img/shows/image-4.jpg,
+                                ./img/shows/image-4@2x.jpg 2x,
+                                " type="image/jpg">
+                                <img src="./img/shows/image-4.jpg" alt="trend-show" class="trend__image" width="200">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="trend__item">
+                        <a href="#" class="trend__link">
+                            <picture>
+                                <source srcset="
+                                ./img/shows/image-5.webp,
+                                ./img/shows/image-5@2x.webp 2x,
+                                " type="image/webp">
+                                <source srcset="
+                                ./img/shows/image-5.jpg,
+                                ./img/shows/image-5@2x.jpg 2x,
+                                " type="image/jpg">
+                                <img src="./img/shows/image-5.jpg" alt="trend-show" class="trend__image" width="200">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="trend__item">
+                        <a href="#" class="trend__link">
+                            <picture>
+                                <source srcset="
+                                ./img/shows/image-6.webp,
+                                ./img/shows/image-6@2x.webp 2x,
+                                " type="image/webp">
+                                <source srcset="
+                                ./img/shows/image-6.jpg,
+                                ./img/shows/image-6@2x.jpg 2x,
+                                " type="image/jpg">
+                                <img src="./img/shows/image-6.jpg" alt="trend-show" class="trend__image" width="200">
+                            </picture>
+                        </a>
+                    </li>
+                </ul>
+                <h2 class="main__title trend__title">Trending Movies</h2>
+                <ul class="trend__list">
+                    <li class="trend__item">
+                        <a href="#" class="trend__link">
+                            <picture>
+                                <source srcset="
+                                ./img/movies/image-1.webp,
+                                ./img/movies/image-1@2x.webp 2x,
+                                " type="image/webp">
+                                <source srcset="
+                                ./img/movies/image-1.jpg,
+                                ./img/movies/image-1@2x.jpg 2x,
+                                " type="image/jpg">
+                                <img src="./img/movies/image-1.jpg" alt="trend-movies" class="trend__image" width="200">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="trend__item">
+                        <a href="#" class="trend__link">
+                            <picture>
+                                <source srcset="
+                                ./img/movies/image-2.webp,
+                                ./img/movies/image-2@2x.webp 2x,
+                                " type="image/webp">
+                                <source srcset="
+                                ./img/movies/image-2.jpg,
+                                ./img/movies/image-2@2x.jpg 2x,
+                                " type="image/jpg">
+                                <img src="./img/movies/image-2.jpg" alt="trend-movies" class="trend__image" width="200">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="trend__item">
+                        <a href="#" class="trend__link">
+                            <picture>
+                                <source srcset="
+                                ./img/movies/image-3.webp,
+                                ./img/movies/image-3@2x.webp 2x,
+                                " type="image/webp">
+                                <source srcset="
+                                ./img/movies/image-3.jpg,
+                                ./img/movies/image-3@2x.jpg 2x,
+                                " type="image/jpg">
+                                <img src="./img/movies/image-3.jpg" alt="trend-movies" class="trend__image" width="200">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="trend__item">
+                        <a href="#" class="trend__link">
+                            <picture>
+                                <source srcset="
+                                ./img/movies/image-4.webp,
+                                ./img/movies/image-4@2x.webp 2x,
+                                " type="image/webp">
+                                <source srcset="
+                                ./img/movies/image-4.jpg,
+                                ./img/movies/image-4@2x.jpg 2x,
+                                " type="image/jpg">
+                                <img src="./img/movies/image-4.jpg" alt="trend-movies" class="trend__image" width="200">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="trend__item">
+                        <a href="#" class="trend__link">
+                            <picture>
+                                <source srcset="
+                                ./img/movies/image-5.webp,
+                                ./img/movies/image-5@2x.webp 2x,
+                                " type="image/webp">
+                                <source srcset="
+                                ./img/movies/image-5.jpg,
+                                ./img/movies/image-5@2x.jpg 2x,
+                                " type="image/jpg">
+                                <img src="./img/movies/image-5.jpg" alt="trend-movies" class="trend__image" width="200">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="trend__item">
+                        <a href="#" class="trend__link">
+                            <picture>
+                                <source srcset="
+                                ./img/movies/image-6.webp,
+                                ./img/movies/image-6@2x.webp 2x,
+                                " type="image/webp">
+                                <source srcset="
+                                ./img/movies/image-6.jpg,
+                                ./img/movies/image-6@2x.jpg 2x,
+                                " type="image/jpg">
+                                <img src="./img/movies/image-6.jpg" alt="trend-movies" class="trend__image" width="200">
+                            </picture>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="trend__button main__button">See more</a>
+            </div>
+        </section>
+
+        <section class="genres">
+            <div class="container">
+                <h2 class="main__title genres__title">Popular Genres</h2>
+                <ul class="genres__list">
+                    <li class="genres__item">
+                        <svg width="80" height="80" class="genres__icon">
+                            <use href="./img/sprite.svg#hearts-icon"></use>
+                        </svg>
+                        <h3 class="genres__subtitle">Romance</h3>
+                    </li>
+                    <li class="genres__item">
+                        <svg width="80" height="80" class="genres__icon">
+                            <use href="./img/sprite.svg#cinema-icon"></use>
+                        </svg>
+                        <h3 class="genres__subtitle">Drama</h3>
+                    </li>
+                    <li class="genres__item">
+                        <svg width="80" height="80" class="genres__icon">
+                            <use href="./img/sprite.svg#historical-icon"></use>
+                        </svg>
+                        <h3 class="genres__subtitle">Historical</h3>
+                    </li>
+                    <li class="genres__item">
+                        <svg width="80" height="80" class="genres__icon">
+                            <use href="./img/sprite.svg#killer-icon"></use>
+                        </svg>
+                        <h3 class="genres__subtitle">Action</h3>
+                    </li>
+                    <li class="genres__item">
+                        <svg width="80" height="80" class="genres__icon">
+                            <use href="./img/sprite.svg#rocket-icon"></use>
+                        </svg>
+                        <h3 class="genres__subtitle">Sci-fi</h3>
+                    </li>
+                    <li class="genres__item">
+                        <svg width="80" height="80" class="genres__icon">
+                            <use href="./img/sprite.svg#horror-icon"></use>
+                        </svg>
+                        <h3 class="genres__subtitle">Horror</h3>
+                    </li>
+                    <li class="genres__item">
+                        <svg width="80" height="80" class="genres__icon">
+                            <use href="./img/sprite.svg#comedy-icon"></use>
+                        </svg>
+                        <h3 class="genres__subtitle">Comedy</h3>
+                    </li>
+                    <li class="genres__item">
+                        <svg width="80" height="80" class="genres__icon">
+                            <use href="./img/sprite.svg#castle-icon"></use>
+                        </svg>
+                        <h3 class="genres__subtitle">Documentary</h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="actors">
+            <div class="container">
+                <h2 class="main__title actors__title">Popular Actors & Directors</h2>
+                <ul class="actors__list">
+                    <li class="actors__item">
+                        <picture>
+                            <source srcset="
+                            ./img/actors/image-1.webp,
+                            ./img/actors/image-1@2x.webp 2x,
+                            " type="image/webp">
+                            <source srcset="
+                            ./img/actors/image-1.jpg,
+                            ./img/actors/image-1@2x.jpg 2x,
+                            " type="image/jpg">
+                            <img src="./img/actors/image-1.jpg" alt="actor" class="actors__image" width="190">
+                        </picture>
+                        <h3 class="actors__name">Samantha Bowen</h3>
+                    </li>
+                    <li class="actors__item">
+                        <picture>
+                            <source srcset="
+                            ./img/actors/image-2.webp,
+                            ./img/actors/image-2@2x.webp 2x,
+                            " type="image/webp">
+                            <source srcset="
+                            ./img/actors/image-2.jpg,
+                            ./img/actors/image-2@2x.jpg 2x,
+                            " type="image/jpg">
+                            <img src="./img/actors/image-2.jpg" alt="actor" class="actors__image" width="190">
+                        </picture>
+                        <h3 class="actors__name">Rhys Birch</h3>
+                    </li>
+                    <li class="actors__item">
+                        <picture>
+                            <source srcset="
+                            ./img/actors/image-3.webp,
+                            ./img/actors/image-3@2x.webp 2x,
+                            " type="image/webp">
+                            <source srcset="
+                            ./img/actors/image-3.jpg,
+                            ./img/actors/image-3@2x.jpg 2x,
+                            " type="image/jpg">
+                            <img src="./img/actors/image-3.jpg" alt="actor" class="actors__image" width="190">
+                        </picture>
+                        <h3 class="actors__name">James Holloway</h3>
+                    </li>
+                    <li class="actors__item">
+                        <picture>
+                            <source srcset="
+                            ./img/actors/image-4.webp,
+                            ./img/actors/image-4@2x.webp 2x,
+                            " type="image/webp">
+                            <source srcset="
+                            ./img/actors/image-4.jpg,
+                            ./img/actors/image-4@2x.jpg 2x,
+                            " type="image/jpg">
+                            <img src="./img/actors/image-4.jpg" alt="actor" class="actors__image" width="190">
+                        </picture>
+                        <h3 class="actors__name">Joshua Walton</h3>
+                    </li>
+                    <li class="actors__item">
+                        <picture>
+                            <source srcset="
+                            ./img/actors/image-5.webp,
+                            ./img/actors/image-5@2x.webp 2x,
+                            " type="image/webp">
+                            <source srcset="
+                            ./img/actors/image-5.jpg,
+                            ./img/actors/image-5@2x.jpg 2x,
+                            " type="image/jpg">
+                            <img src="./img/actors/image-5.jpg" alt="actor" class="actors__image" width="190">
+                        </picture>
+                        <h3 class="actors__name">Patrick Elliott</h3>
+                    </li>
+                    <li class="actors__item">
+                        <picture>
+                            <source srcset="
+                            ./img/actors/image-6.webp,
+                            ./img/actors/image-6@2x.webp 2x,
+                            " type="image/webp">
+                            <source srcset="
+                            ./img/actors/image-6.jpg,
+                            ./img/actors/image-6@2x.jpg 2x,
+                            " type="image/jpg">
+                            <img src="./img/actors/image-6.jpg" alt="actor" class="actors__image" width="190">
+                        </picture>
+                        <h3 class="actors__name">Morgan O'Neill</h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="soon">
+            <div class="container">
+                <div class="soon__container">
+                    <div class="soon__image">
+                        <picture>
+                            <source srcset="
+                            ./img/soon/image-1.webp,
+                            ./img/soon/image-1@2x.webp 2x,
+                            " type="image/webp">
+                            <source srcset="
+                            ./img/soon/image-1.jpg,
+                            ./img/soon/image-1@2x.jpg 2x,
+                            " type="image/jpg">
+                            <img src="./img/soon/image-1.jpg" alt="actor" class="soon__image--item" width="739">
+                        </picture>
+                    </div>
+                    <div class="soon__text">
+                        <img src="./img/soon/image-2.png" alt="year" class="soon__text--icon" width="294px">
+                        <p class="soon__text--item">Coming Soon...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="register">
+            <b class="register__title">Are You New Here ? <br> Don’t wait, Register Now. </b>
+            <button class="main__button register__button">Register Now</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <a href="./index.html" class="footer__logo">
+                <img src="./img/footer/footer-logo.svg" alt="logo" class="footer__logo--icon" width="70">
+                box
+            </a>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <ul class="footer__item--list">
+                        <li class="footer__item--item">
+                            <a href="#" class="footer__item--link">Voice over and Subtitle</a>
+                        </li>
+                        <li class="footer__item--item">
+                            <a href="#" class="footer__item--link">Media Center </a>
+                        </li>
+                        <li class="footer__item--item">
+                            <a href="#" class="footer__item--link">Privacy</a>
+                        </li>
+                        <li class="footer__item--item">
+                            <a href="#" class="footer__item--link">Contact us</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer__item">
+                    <ul class="footer__item--list">
+                        <li class="footer__item--item">
+                            <a href="#" class="footer__item--link">Voice Description</a>
+                        </li>
+                        <li class="footer__item--item">
+                            <a href="#" class="footer__item--link">Investor Relations</a>
+                        </li>
+                        <li class="footer__item--item">
+                            <a href="#" class="footer__item--link">Legal Provisions</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer__item">
+                    <ul class="footer__item--list">
+                        <li class="footer__item--item">
+                            <a href="#" class="footer__item--link">Help Center</a>
+                        </li>
+                        <li class="footer__item--item">
+                            <a href="#" class="footer__item--link">Job Opportunities</a>
+                        </li>
+                        <li class="footer__item--item">
+                            <a href="#" class="footer__item--link">Cookies Preferences</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer__item">
+                    <ul class="footer__item--list">
+                        <li class="footer__item--item">
+                            <a href="#" class="footer__item--link">Gift Cards</a>
+                        </li>
+                        <li class="footer__item--item">
+                            <a href="#" class="footer__item--link">Terms of Use</a>
+                        </li>
+                        <li class="footer__item--item">
+                            <a href="#" class="footer__item--link">Corporate Informations</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
