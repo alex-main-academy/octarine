@@ -255,7 +255,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .hero {
-    background-image: url(../../../img/hero/hero-back.png);
+    background-image: url(../img/hero/hero-back.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
