@@ -1,7 +1,7 @@
 .hero {
     border-bottom: 2px solid rgba(47, 46, 46, 1);
 
-    background-image: url(../../../img/hero/hero-back.png);
+    background-image: url(../img/hero/hero-back.png);
     background-repeat: no-repeat;
     background-position: right center;
 
@@ -10,7 +10,7 @@
     }
 
     @media screen and(max-width:768px) {
-        background-image: url(../../../img/hero/hero-back.png);
+        background-image: url(../img/hero/hero-back.png);
         background-repeat: no-repeat;
         background-position: top center;
         background-size: cover;
